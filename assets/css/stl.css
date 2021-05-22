@@ -1,0 +1,200 @@
+
+
+:root {
+    --primary-color:#EAC319;
+    --secondary-color:#C30831;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+    user-select: none;
+    background: #FFFFFF;
+    font-family: 'Abel';
+}
+a {
+    color: inherit;
+}
+a:hover {
+    color:inherit;
+    text-decoration: none;
+}
+
+
+/*Shared Styles */
+.section {
+    padding: 120px 0;
+}
+.section .section-text {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.section .section-text p,
+.section .section-text h3 {
+    max-width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 60%;
+    display: block;
+}
+.section .section-text h3 {
+    color: #2B3A5E;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: -0.35px;
+    margin-bottom: 20px;
+}
+.section .section-text p {
+    /* font-size: 18px; */
+    color: #3b3b3b;
+    font-weight: 300;
+}
+
+.section .section-title {
+    position: relative;
+    margin-bottom: 15px;
+}
+.section .section-title .back-title {
+    width: 100%;
+    opacity: 0.1;
+    font-size: 90px;
+    position: absolute;
+    top: 0;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    text-align: center;    
+    user-select: text;
+}
+.section .section-title .front-title {
+    color: #252525;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 35px;
+    text-transform: capitalize;
+    line-height: 100px;
+    height: 100px;
+}
+.black.section .section-title .back-title {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+.black.section .section-title .front-title {
+    color: #fff;
+}
+
+
+@media screen and (min-width:1200px ) {
+    .cc-container {
+        padding: 0 60px;
+        /* max-width: initial; */
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 992px){
+.cc-container {
+    max-width: 98%;
+}
+}
+
+
+@media (min-width: 1600px){
+    .cc-container {
+        max-width: 1420px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .section .section-text p,
+    .section .section-text h3 {
+        max-width: 80%!important;
+    }
+    .section .section-text h3 {
+        font-size: 28px;
+    }
+
+}
+    
+.styled-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+    padding: 16px 40px;
+    overflow: hidden;
+    display: block;
+}
+.styled-btn > *{
+    position: relative;
+}
+.styled-btn:hover{
+    color: #fff;
+}
+.styled-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    transform: translateX(-100%);
+    transition: .2s all linear;
+}
+.styled-btn:hover::before{
+    transform: translateX(0%);
+}
+@media screen and (max-width:1120px) {
+    .styled-btn {
+        padding: 8px 20px;
+    }
+}
+
+
+.card {
+    text-align: left;
+    background: #fff;
+    padding: 50px;
+    margin-bottom: 0px;
+    transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+    -webkit-box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 0 25px rgba(0,0,0,.1);
+    -ms-box-shadow: 0 0 25px rgba(0,0,0,.1);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+a {
+    display: block;
+    transition: .2s all;
+}
+a:hover{
+    color: #b8aa83;
+}
+
+/* THEME START*/
+/* Top Header */
+.top-header-outer {
+    background: #EEEEEE;
+    color: #666;
+}
+.top-header-outer .top-header {
+    padding: 14px 0;
+}
+.top-header .header-infos  .info-icon{
+    margin-right: 5px;
+}
+.top-header .text-right  a{
+    display: inline-block;
+    margin-left: 18px;
+}
