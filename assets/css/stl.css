@@ -188,13 +188,37 @@ a:hover{
     background: #EEEEEE;
     color: #666;
 }
-.top-header-outer .top-header {
+.top-header-outer  {
     padding: 14px 0;
 }
 .top-header .header-infos  .info-icon{
     margin-right: 5px;
 }
-.top-header .text-right  a{
+.top-header .top-right  a{
     display: inline-block;
     margin-left: 18px;
+}
+/* Upper Header*/
+.upper-header {
+    color: #666;
+}
+.upper-header .search-bar {
+    display: flex;
+    position: relative;
+    border:1px solid #6666664d;
+    max-width: 260px;
+}
+.upper-header .search-bar button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0 8px;
+    color: #858585;
+}
+.upper-header .search-bar input {
+    margin: 0;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    outline: none;
 }
