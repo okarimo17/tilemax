@@ -1,8 +1,8 @@
 
 
 :root {
-    --primary-color:#EAC319;
-    --secondary-color:#C30831;
+    --primary-color:#B8AA83;
+    --secondary-color:#666;
 }
 
 *{
@@ -60,38 +60,41 @@ a:hover {
     position: relative;
     margin-bottom: 15px;
 }
-.section .section-title .back-title {
-    width: 100%;
-    opacity: 0.1;
-    font-size: 90px;
-    position: absolute;
-    top: 0;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
-    text-align: center;    
-    user-select: text;
-}
-.section .section-title .front-title {
-    color: #252525;
+.section .section-title {
     text-align: center;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 35px;
-    text-transform: capitalize;
-    line-height: 100px;
-    height: 100px;
-}
-.black.section .section-title .back-title {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fff;
-}
-.black.section .section-title .front-title {
-    color: #fff;
 }
 
+.section .section-title h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-family: "Kanit";
+    font-weight: 200;
+}
 
+.section .section-title h2 strong{
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-left: 8px;
+}
+
+.section .section-title h2::before {
+    display: inline-block;
+    content: "";
+    height: 2px;
+    width: 20px;
+    background: #252525;
+    margin-right: 10px;
+}
+.section .section-title h2::after {
+    display: inline-block;
+    content: "";
+    height: 2px;
+    width: 20px;
+    background: #252525;
+    margin-left: 10px;
+}
 @media screen and (min-width:1200px ) {
     .cc-container {
         padding: 0 60px;
@@ -221,4 +224,26 @@ a:hover{
     width: 100%;
     border: none;
     outline: none;
+}
+
+/* bottom-header main-navbar  */
+.bottom-header.main-navbar .nav-link {
+    padding: 15px 22px;
+    transition: .15s;
+    color: #252525;
+}
+.bottom-header.main-navbar .nav-item + .nav-item {
+    margin-left: 5px;
+} 
+
+.bottom-header.main-navbar .nav-link.active,
+.bottom-header.main-navbar .nav-link:hover{
+    background: #B8AA83;
+    color: #efefef;
+}
+
+.bottom-header.main-navbar .navbar {
+    border: 0px solid #eaeaea;
+    padding: 0;
+    border-top-width: 1px;
 }
