@@ -120,9 +120,124 @@
     TODO SLIDER
   </section>
 
-  <section class="section">
+  <section class="section services-section bg-light">
     <div class="section-title">
       <h2>WE<strong>SPECIALIZE IN</strong></h2>
+    </div>
+    <div class="section-content container-fluid">
+      <div class="owl-carousel owl-theme services-carousel">
+
+         <div class="item">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="assets/img/services/0.jpg" alt="service name" class="img-fluid">
+            </div>
+            <div class="service-content">
+              <div class="service-title">
+                <h3>Mauris interdum sapien</h3>
+              </div>
+              <div class="service-excrept">
+                <p>Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+              </div>
+              <div class="service-link">
+                <a href="#" class="styled-btn">Click Here</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+        
+        <div class="item">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="assets/img/services/1.jpg" alt="service name" class="img-fluid">
+            </div>
+            <div class="service-content">
+              <div class="service-title">
+                <h3>Pellentesque acumsan</h3>
+              </div>
+              <div class="service-excrept">
+                <p>Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+              </div>
+              <div class="service-link">
+                <a href="#" class="styled-btn">Click Here</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+
+        <div class="item">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="assets/img/services/2.jpg" alt="service name" class="img-fluid">
+            </div>
+            <div class="service-content">
+              <div class="service-title">
+                <h3>Nam nec nisi hendrerit</h3>
+              </div>
+              <div class="service-excrept">
+                <p>Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+              </div>
+              <div class="service-link">
+                <a href="#" class="styled-btn">Click Here</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="item">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="assets/img/services/3.jpg" alt="service name" class="img-fluid">
+            </div>
+            <div class="service-content">
+              <div class="service-title">
+                <h3>Luxury Outdoor Rooms</h3>
+              </div>
+              <div class="service-excrept">
+                <p>Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+              </div>
+              <div class="service-link">
+                <a href="#" class="styled-btn">Click Here</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="item">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="assets/img/services/4.jpg" alt="service name" class="img-fluid">
+            </div>
+            <div class="service-content">
+              <div class="service-title">
+                <h3>Luxury Outdoor Rooms</h3>
+              </div>
+              <div class="service-excrept">
+                <p>Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+              </div>
+              <div class="service-link">
+                <a href="#" class="styled-btn">Click Here</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="item">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="assets/img/services/5.jpg" alt="service name" class="img-fluid">
+            </div>
+            <div class="service-content">
+              <div class="service-title">
+                <h3>Luxury Outdoor Rooms</h3>
+              </div>
+              <div class="service-excrept">
+                <p>Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+              </div>
+              <div class="service-link">
+                <a href="#" class="styled-btn">Click Here</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
     </div>
   </section>
 
@@ -135,9 +250,33 @@
     $(document).ready(function () {
       initRightNav();
   
-      setTimeout(() => {
-        $('.right-nav').addClass('animated')
-      }, 1000)
+      $('.services-carousel').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        items: 4,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          400: {
+            items: 2,
+          },
+          800: {
+            items: 3,
+          },
+          1000:{
+            items:4
+          },
+          1200 :{
+            items:5
+          }
+        }
+
+      })
+      // setTimeout(() => {
+      //   $('.right-nav').addClass('animated')
+      // }, 1000)
 
     });
   </script>
