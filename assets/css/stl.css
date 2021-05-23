@@ -135,7 +135,12 @@ a:hover {
     overflow: hidden;
     display: inline-block;
 }
-
+.styled-btn.bordered-btn{
+    border: 2px solid var(--primary-color);
+    padding: 10px 22px;
+    color: var(--primary-color);
+    font-family: 'Abel';
+}
 .styled-btn:hover{
     background-color: var(--primary-color);
     color: #fff;
@@ -170,6 +175,14 @@ a {
 }
 a:hover{
     color: #b8aa83;
+}
+
+.separater {
+    height: 2px;
+    width: 25px;
+    background-color: var(--primary-color);
+    display: block;
+    margin: 20px 0;
 }
 
 /* THEME START*/
@@ -264,4 +277,58 @@ a:hover{
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background-color: var(--primary-color);
+}
+
+/* blocks section  */
+
+.block-section .block-item .block-image img {
+    max-height: 580px;
+    width: 100%;
+}
+.block-section .block-item .block-descreption {
+    padding-left:69px;
+}
+
+.block-section .block-item .block-descreption .block-number {
+    font-size: 88px;
+    font-weight: 800;
+    color: #888888ad;
+    /* font-family: 'Arial Black';*/
+}
+.block-section .block-item .block-descreption .block-title h3{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-align: inherit;
+    text-transform: none;
+    color: #000;
+    font-family: 'Abel';
+    font-weight: bold;
+}
+.block-section .block-item .block-descreption .block-excrept{
+    font-family: Abel;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: none;
+    margin: 20px 0;
+}
+.block-section .block-item .block-image .image-text{
+    width: 90%;
+    margin-top: -35px;
+    padding: 25px 30px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+}
+.block-section .block-item .block-image .image-text h3{
+    font-size: 24px;
+}
+.block-left .block-descreption {
+    text-align: right;
+}
+
+.block-left .block-descreption .separater{
+    text-align: right;
+    margin-left: auto;
 }
