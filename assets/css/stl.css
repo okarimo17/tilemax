@@ -451,3 +451,62 @@ a:hover{
         height: 260px;
     }
 }
+
+/* Contact Section */
+.contact-section {
+    background:  linear-gradient(to right,#000000dc,#000000dc) , url('../img/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-section .contact-data {
+    color: #fff;
+}
+.contact-section .contact-data .title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact-section .contact-form  {
+    background: #fff;
+}
+
+.contact-section .contact-form {
+    padding: 30px 25px;
+}
+.contact-section .contact-form label {
+    font-weight: bold;
+}
+.contact-section .contact-form input ,
+.contact-section .contact-form textarea {
+    border: 0px ;
+    border-bottom: 2px solid #e3e3e3;
+    border-radius: 0;
+}
+.contact-section .contact-form input:focus,
+.contact-section .contact-form textarea:focus{
+    outline: none;
+    box-shadow: none;
+}
+.contact-section .contact-form input + span,
+.contact-section .contact-form textarea + span {
+    overflow: hidden;
+    height: 2px;
+    margin-top: -2px;
+    display: block;
+}
+.contact-section .contact-form input + span::after,
+.contact-section .contact-form textarea + span::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #222;
+    display: block;
+    transform: translateX(-100%);
+    transition: .2s transform;
+}
+.contact-section .contact-form input:hover + span::after,
+.contact-section .contact-form input:focus + span::after ,
+.contact-section .contact-form textarea:hover + span::after,
+.contact-section .contact-form textarea:focus + span::after {
+    transform: translateX(0);
+}
