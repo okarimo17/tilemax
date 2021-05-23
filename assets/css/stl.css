@@ -574,4 +574,31 @@ a:hover{
 .tabs-section .tab-content .tab-text  {
     padding:30px;
 }
-/* product-item-content */
+.tabs-section .tab-content .tab-text h3{
+    margin: 25px 0;
+}
+.tabs-section .tab-content .tab-text .product-item {
+    margin-bottom: 15px;
+}
+.tabs-section .tab-content .tab-text .product-item .product-item-content h4{
+    cursor: pointer;
+}
+.tabs-section .tab-content .tab-text .product-item .product-item-content span {
+    height: 3px;
+    width: 42px;
+    background: #EEEEEE;
+    display: block;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.tabs-section .tab-content .tab-text .product-item .product-item-content span::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background: var(--primary-color);
+    transform: translateX(-100%);    
+    transition: .2s all;
+}
+.tabs-section .tab-content .tab-text .product-item .product-item-content h4:hover + span::after{
+    transform: translateX(0%); 
+}
