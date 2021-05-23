@@ -95,6 +95,17 @@ a:hover {
     background: #252525;
     margin-left: 10px;
 }
+.section.dark-section .section-title h2,
+.section.dark-section .section-title p  {
+    color: #efefef;
+}
+.section .section-title h2::before,
+.section .section-title h2::after{
+    background-color: #efefef;
+}
+
+
+
 @media screen and (min-width:1200px ) {
     .cc-container {
         padding: 0 60px;
@@ -324,11 +335,65 @@ a:hover{
 .block-section .block-item .block-image .image-text h3{
     font-size: 24px;
 }
-.block-left .block-descreption {
+.block-section .block-left .block-descreption {
     text-align: right;
 }
 
-.block-left .block-descreption .separater{
-    text-align: right;
+.block-section .block-left .block-descreption .separater,
+.block-section .block-left .block-image .image-text{
     margin-left: auto;
+}
+
+/* Range Of Service */
+
+.range-section {
+    background:  linear-gradient(to right,#000000a6,#000000a6) , url('../img/range.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.range-section .section-content {
+    margin-top: 80px;
+}
+.range-section .range-item {
+    color: #efefef;
+    margin-bottom: 50px;
+}
+.range-section .range-item .item-count {
+    margin: 0 auto;
+    height: 140px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+}
+.range-section .range-item .item-count > *{
+    position: relative;
+    z-index: 1;
+}
+.range-section .range-item .item-count i{
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+.range-section .range-item  .item-count .item-number{
+    font-size: 24px;
+    font-family: 'Kanit';
+}
+.range-section .range-item .item-count::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: var(--primary-color);
+    z-index: 0;
+    transform: rotate(45deg);
+}
+.range-section .range-item .item-text {
+    margin-top: 30px;
+    font-weight: 600;
+}
+.range-section .section-content {
+    text-align: center;
 }
