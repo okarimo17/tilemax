@@ -58,10 +58,8 @@ a:hover {
 
 .section .section-title {
     position: relative;
-    margin-bottom: 15px;
-}
-.section .section-title {
     text-align: center;
+    /* margin-bottom: 15px; */
 }
 
 .section .section-title h2 {
@@ -71,6 +69,7 @@ a:hover {
     font-size: 42px;
     font-family: "Kanit";
     font-weight: 200;
+    margin-bottom: 0;
 }
 
 .section .section-title h2 strong{
@@ -104,7 +103,16 @@ a:hover {
     background-color: #efefef;
 }
 
+.section .section-title .back-title {
+    width: 100%;
+    opacity: 0.1;
+    font-size: 74px;
+    position: absolute;
+    user-select: text;
+    top: -50%;
+    font-weight: bold;
 
+}
 
 @media screen and (min-width:1200px ) {
     .cc-container {
