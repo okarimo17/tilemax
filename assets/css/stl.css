@@ -525,3 +525,53 @@ a:hover{
 .contact-section .contact-form textarea:focus + span::after {
     transform: translateX(0);
 }
+
+/* tabs container */
+.tabs-section .nav-pills {
+    display: flex;
+    margin-bottom: 0!important;
+}
+.tabs-section .nav-pills li {
+    flex: 1;
+    border-radius: 0;
+    background: var(--primary-color);
+}
+.tabs-section .nav-pills li+li {
+    border-left: 2px solid #efefef;
+}
+.tabs-section .nav-pills li .nav-link {
+    border-radius: 0;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    color: #efefef;
+}
+.tabs-section .nav-pills li .nav-link.active {
+    background: #f7f7f7;
+    color: #232323;
+}
+.tabs-section .nav-pills li .nav-link:hover{
+    color: inherit;
+}
+
+.tabs-section .product-item .product-item-icon .inner-img {
+    background: var(--primary-color);
+    border-radius: 50%;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+}
+.tabs-section .product-item .product-item-icon .inner-img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.tabs-section .tab-content .tab-image img {
+    height: 497px;
+}
+
+.tabs-section .tab-content .tab-text  {
+    padding:30px;
+}
+/* product-item-content */
