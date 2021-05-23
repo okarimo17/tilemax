@@ -3,6 +3,7 @@
 :root {
     --primary-color:#B8AA83;
     --secondary-color:#666;
+    --primary-hover:#ecdaab;
 }
 
 *{
@@ -153,12 +154,26 @@ a:hover {
     padding: 10px 16px;
     overflow: hidden;
     display: inline-block;
+    transition: .2s all;
 }
 .styled-btn.bordered-btn{
     border: 2px solid var(--primary-color);
     padding: 10px 22px;
     color: var(--primary-color);
     font-family: 'Abel';
+}
+
+.styled-btn.filled-btn{
+    background-color:  var(--primary-color);
+    padding: 10px 22px;
+    color: #efefef;
+    font-family: 'Abel';
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,.15);
+}
+
+.styled-btn.filled-btn:hover{
+    background-color:  var(--primary-hover);    
 }
 .styled-btn:hover{
     background-color: var(--primary-color);
