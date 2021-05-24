@@ -271,8 +271,11 @@ a:hover{
 }
 
 /* bottom-header main-navbar  */
+.bottom-header.main-navbar{
+    margin-bottom: 2px;
+}
 .bottom-header.main-navbar .nav-link {
-    padding: 15px 22px;
+    padding: 18px 24px;
     transition: .15s;
     color: #252525;
 }
@@ -284,6 +287,7 @@ a:hover{
 .bottom-header.main-navbar .nav-link:hover{
     background: #B8AA83;
     color: #efefef;
+    font-weight: bold;
 }
 
 .bottom-header.main-navbar .navbar {
