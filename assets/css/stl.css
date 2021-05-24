@@ -771,3 +771,38 @@ a:hover{
 .bestof-section .card-holder .card-item .card-inner .card-face2 {
     transform: rotateY(180deg); 
 }
+
+/* contact-info-section */
+
+.contact-info-section .contact-item .inner {
+    background-color: var(--primary-color);
+    padding: 15px;
+    padding-bottom: 0;
+    color: #efefef;
+    position: relative;
+}
+
+.contact-info-section .contact-item .inner .content {
+    border: 2px solid #ffffff52;
+    padding: 20px 10px;
+    padding-bottom: 35px;
+}
+.contact-info-section .contact-item h5{
+    font-weight: bold;
+}
+
+.contact-info-section .contact-item .inner .card-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background: #fff;    
+    color: var(--primary-color);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
