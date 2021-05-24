@@ -887,7 +887,7 @@ a:hover{
 /* MAIN SLIDER */
 
 .slider-item {
-    height: 80vh;
+    min-height: 90vh;
     background-color: #3b3b3b;
     background-size: cover;
     background-repeat: no-repeat;
@@ -897,7 +897,7 @@ a:hover{
     color: #fff;
     text-transform: uppercase;
     font-size: 60px;
-    opacity: 0;
+    /* opacity: 0; */
     font-weight: 700;
 }
 .slider-item .slide-sub-title {
@@ -915,7 +915,7 @@ a:hover{
     font-size: 28px;
     display: inline-flex;
     align-items: center;
-    opacity: 0;
+    /* opacity: 0; */
 }
 .slider-item .slide-list ul li  +li {
     margin-left: 20px;
@@ -943,18 +943,22 @@ a:hover{
 .slider-carousel .owl-nav button.owl-next, 
 .slider-carousel .owl-nav button.owl-prev{
     width: 55px;
-    height: 55px;
-    line-height: 40px;
-    font-size: 40px;
-    color: var(--primary-color);
+    /* height: 55px; */
+    /* line-height: 40px; */
+    font-size: 66px;
+    color: #fff;
     border-radius: 0;
-    background-color: #fff;
+    /* background-color: #fff; */
     overflow: hidden;
     transition: .2s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
 }
 .slider-carousel .owl-nav button:hover{
-    background-color: #eac319d9!important;
-    color: #fff;
+    color: #eac319d9!important;
 }
 .slider-carousel .owl-nav button.owl-prev,
 .slider-carousel .owl-nav button.owl-next{
@@ -971,39 +975,45 @@ a:hover{
 }
 
 /* slider animatins */
-.owl-animated-in.active .slide-title {
+.owl-animated-in.active .slide-title,
+.active .slide-title {
+    opacity: 0;
     animation: fadeDown .7s ;
     animation-fill-mode: forwards;
     animation-delay: 0.7s;
 }
-.owl-animated-in.active .slide-sub-title {
+.owl-animated-in.active .slide-sub-title,
+.active .slide-sub-title {
+    opacity: 0;
     animation: fadeDown .7s ;
     animation-fill-mode: forwards;
 }
 
-
-/* .owl-animated-in.active .slide-list ul li  {
-    animation: fadeDown .7s ;
-    animation-fill-mode: forwards;
-    animation-delay: 1.4s;
-} */
-.owl-animated-in.active .slide-list ul li:nth-child(1)  {
+.owl-animated-in.active .slide-list ul li:nth-child(1),
+.active .slide-list ul li:nth-child(1)  {
+    opacity: 0;
     animation: fadeDown .7s ;
     animation-fill-mode: forwards;
     animation-delay: 1.4s;
 }
-.owl-animated-in.active .slide-list ul li:nth-child(2)  {
+.owl-animated-in.active .slide-list ul li:nth-child(2),
+.active .slide-list ul li:nth-child(2)  {
+    opacity: 0;
     animation: fadeDown .7s ;
     animation-fill-mode: forwards;
     animation-delay: 2.1s;
 }
 
-.owl-animated-in.active .slide-list ul li:nth-child(3)  {
+.owl-animated-in.active .slide-list ul li:nth-child(3) ,
+.active .slide-list ul li:nth-child(3) {
+    opacity: 0;
     animation: fadeDown .7s ;
     animation-fill-mode: forwards;
     animation-delay: 2.8s;
 }
-.owl-animated-in.active .slide-list ul li:nth-child(4)  {
+.owl-animated-in.active .slide-list ul li:nth-child(4) ,
+.active .slide-list ul li:nth-child(4)  {
+    opacity: 0;
     animation: fadeDown .7s ;
     animation-fill-mode: forwards;
     animation-delay: 3.5s;
@@ -1022,4 +1032,57 @@ a:hover{
         opacity: 1;
         transform: translateY(0%);
     }
+}
+
+.slider-content.container-fluid {
+    background-color: #000000a8;
+}
+
+.item.item2 .slider-item .slide-title {
+    background: #A05909;
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 5px 20px;
+}
+.item.item2 .slider-item .slide-sub-title {
+    background: #E1E0DF;
+    color: #323232;
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 5px 20px;
+    margin-top: 8px;
+    font-size: 24px;
+}
+.item.item2 .slider-item .styled-btn {
+    margin-top: 15px;
+    background: #111;
+    color: #E1E0DF;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-size: 16px;
+}
+.item.item2 .slider-item .styled-btn:hover{
+    background: #333;
+}
+.owl-animated-in.active .item.item2 .slide-title,
+.active .slide-title {
+    opacity: 0;
+    animation: fadeDown .7s ;
+    animation-fill-mode: forwards;
+}
+.owl-animated-in.active .item.item2 .slide-sub-title,
+.active .slide-sub-title {
+    opacity: 0;
+    animation: fadeDown .7s ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+
+.owl-animated-in.active .item.item2 .styled-btn,
+.active .styled-btn  {
+    opacity: 0;
+    animation: fadeDown .7s ;
+    animation-fill-mode: forwards;
+    animation-delay: 1.4s; 
 }
