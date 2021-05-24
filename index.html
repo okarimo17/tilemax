@@ -116,9 +116,40 @@
     </div>
   </header>
 
-  <section class="main_slideshow py-4">
-    TODO SLIDER
+
+
+  <section class="main-slider">
+    <div class="main-slider_inner">
+      <div class="owl-carousel slider-carousel">
+        <div class="item">
+          <div class="slider-item" style="background-image:url('assets/img/slides/1.jpg')">
+            <div class="slider-content container">
+              <div class="row mx-0 p-0 text-center align-items-center" style="min-height: 100%;">
+                <div class="col-12">
+                  <h5 class="slide-sub-title">Commercial and Residential</h5>
+                  <h3 class="slide-title">Flooring Specialists</h3>
+                  <div class="slide-list">
+                    <ul>
+                      <li>Laminate</li>
+                      <li>Carpet</li>
+                      <li>Wood</li>
+                      <li>Vinyls</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+
+
+
+
+
 
   <section class="section services-section bg-light">
     <div class="section-title">
@@ -1154,7 +1185,13 @@
             items:5
           }
         }
-
+      })
+      $('.slider-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        items: 1,
+        animateIn: 'flipInX',
       })
       // setTimeout(() => {
       //   $('.right-nav').addClass('animated')
