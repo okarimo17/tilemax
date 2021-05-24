@@ -651,7 +651,7 @@ a:hover{
 }
 .testimonials-section .testi-text,
 .testimonials-section .testi-images{
-    padding: 50px 0;
+    padding: 80px 0;
 }
 .testimonials-section .testi-images ul li.active img{
     border: 4px solid var(--primary-color);
@@ -663,4 +663,111 @@ a:hover{
 .testimonials-section .testi-text h6 {
     font-weight: bold;
     margin-top: 20px;
+}
+
+
+/* best of section*/
+.bestof-section .according .card-header {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.bestof-section .according .card-header h5{
+    display: inline-block;
+}
+.bestof-section .according .card-header  button{    
+    color: #333;
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 0;    
+    text-decoration: none;
+}
+.bestof-section .according .card-header::before{
+    content: "+";
+    height: 30px;
+    width: 30px;
+    background: #efefef;
+    display: inline-block;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-right: 10px;
+}
+.bestof-section .according .card-body {
+    padding-left: 40px;
+}
+.bestof-section .according .card-header button:hover{
+    color: var(--primary-hover);
+    text-decoration: none;
+}
+.bestof-section .according .card-header[aria-expanded="true"]::before {
+    content: "-";
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.bestof-section .according .card-header[aria-expanded="true"]  button {
+    color: var(--primary-color);
+}
+
+.bestof-section .card-holder .card-item {
+    padding: 10px;
+}
+.bestof-section .card-holder .card-item .card-inner {
+    border: 1px solid rgb(0 0 0 / 11%);
+    padding: 50px 15px;
+    position: relative;
+    height: 180px;
+}
+
+.bestof-section .card-holder .card-item .card-inner .card-heading {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.bestof-section .card-holder .card-item .card-inner .card-icon {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.bestof-section .card-holder .card-item .card-inner .card-face1,
+.bestof-section .card-holder .card-item .card-inner .card-face2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;  
+    padding: 50px 15px;  
+}
+.bestof-section .card-holder .card-item .card-inner .card-face2 p{
+    text-align: center;
+}
+.bestof-section .card-holder .card-item .card-inner{
+    perspective: 800px;
+}
+.bestof-section .card-holder .card-item .card-inner{
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+}
+.bestof-section .card-holder .card-item .card-inner:hover .card-face1{
+    transform: rotateY(-180deg);
+}
+.bestof-section .card-holder .card-item .card-inner:hover .card-face2{
+    transform: rotateY(0deg);
+}
+.bestof-section .card-holder .card-item .face {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.bestof-section .card-holder .card-item .card-inner .card-face1 {
+    transform: rotateY(0deg);
+} 
+
+.bestof-section .card-holder .card-item .card-inner .card-face2 {
+    transform: rotateY(180deg); 
 }
