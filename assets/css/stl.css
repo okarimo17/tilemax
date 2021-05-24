@@ -163,6 +163,15 @@ a:hover {
     font-family: 'Abel';
 }
 
+.styled-btn.bordered-btn.bordered-dark-btn{
+    border: 2px solid #efefef;
+    color: #efefef;
+    background: transparent;
+}
+.styled-btn.bordered-btn.bordered-dark-btn:hover{
+    background: var(--primary-hover);
+    color: #fff;
+}
 .styled-btn.filled-btn{
     background-color:  var(--primary-color);
     padding: 10px 22px;
@@ -805,4 +814,14 @@ a:hover{
     background: #fff;    
     color: var(--primary-color);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+
+/* Footer Section */
+.footer-bar {
+    background: var(--primary-color);
+}
+.footer-bar h5 {
+    margin-bottom: 0;
+    color: #efefef;
 }
