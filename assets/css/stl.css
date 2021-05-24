@@ -171,6 +171,7 @@ a:hover {
 .styled-btn.bordered-btn.bordered-dark-btn:hover{
     background: var(--primary-hover);
     color: #fff;
+    border: 2px solid #efefef;
 }
 .styled-btn.filled-btn{
     background-color:  var(--primary-color);
@@ -858,4 +859,13 @@ a:hover{
 .footer ul li +li {
     display: inline-block;
     margin-left: 10px;
+}
+
+.footer .bordered-btn {
+    text-transform: capitalize;
+}
+
+.footer .footer-actions a {
+    display: inline-block;
+    margin-left: 18px;
 }
